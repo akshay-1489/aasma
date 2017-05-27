@@ -1,0 +1,11 @@
+{
+	"author":"Akshay Bhargava",
+	"name": "citydetails",
+	"version": "0.0.1",
+	"description": "play with locations",
+	"main":"censorify",
+	"dependencies":{},
+	"engines":{
+		"node":"*"
+	}
+}
