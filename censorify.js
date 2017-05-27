@@ -1,14 +1,14 @@
 var arr = ['Jaipur','Jodhpur','Ajmer'];
 var censoredarr=[];
-function restaurants(city)
+function restaurants(str)
 {
 	for(idx in arr)
-		city = city.replace(arr[idx],"*****");
+		str = str.replace(arr[idx],"*****");
 	
 	for(idm in censoredarr)
-		city = city.replace(censoredarr[idm],"&&&&&");
+		str = str.replace(censoredarr[idm],"&&&&&");
 	
-	return city;
+	return str;
 }
 function addplaces(city)
 {
@@ -16,7 +16,7 @@ function addplaces(city)
 }
 function getplaces()
 {
-	arr.concat(censoredarr);
+	return arr.concat(censoredarr);
 }
 exports.restaurants = restaurants;
 exports.addplaces = addplaces;
